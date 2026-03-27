@@ -325,16 +325,16 @@
 
   <nav class="navbar" dir="rtl">
   <button class="mobile-toggle" id="mobileToggle" aria-label="Menu">
-    <svg class="hamburger-icon" width="24" height="24" viewbox="0 0 24 24" fill="none">
+    <svg class="hamburger-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
       <path d="M3 12h18M3 6h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
     </svg>
-    <svg class="close-icon" width="24" height="24" viewbox="0 0 24 24" fill="none" style="display: none;">
+    <svg class="close-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" style="display: none;">
       <path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
     </svg>
   </button>
 
-  <button class="phone-header-btn" data-phone="[business_phone]" aria-label="Call">
-    <svg width="20" height="20" viewbox="0 0 24 24" fill="currentColor">
+  <button class="phone-header-btn" data-phone="0543914493" aria-label="Call">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
       <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
     </svg>
   </button>
@@ -736,7 +736,7 @@
         const phoneLinks = document.querySelectorAll('a[href^="tel:"]');
         const phoneNumber = phoneLinks.length > 0 
           ? phoneLinks[0].getAttribute('href').replace('tel:', '')
-          : '[business_phone]';
+          : '0543914493';
         
         window.location.href = 'tel:' + phoneNumber;
         console.log('[Navbar] Phone button clicked');
@@ -824,21 +824,21 @@
         <div class="index-hero-metrics">
           <div class="index-hero-metric">
             <span class="index-hero-metric-icon" aria-hidden="true">
-              <svg data-element-type="icon" data-icon-type="svg" width="18" height="18" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
+              <svg data-element-type="icon" data-icon-type="svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
             </span>
             <span class="index-hero-metric-text">תכניות מותאמות אישית</span>
           </div>
           <span class="index-hero-metric-divider" aria-hidden="true"></span>
           <div class="index-hero-metric">
             <span class="index-hero-metric-icon" aria-hidden="true">
-              <svg data-element-type="icon" data-icon-type="svg" width="18" height="18" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+              <svg data-element-type="icon" data-icon-type="svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
             </span>
             <span class="index-hero-metric-text">הרגלים בני קיימא</span>
           </div>
           <span class="index-hero-metric-divider" aria-hidden="true"></span>
           <div class="index-hero-metric">
             <span class="index-hero-metric-icon" aria-hidden="true">
-              <svg data-element-type="icon" data-icon-type="svg" width="18" height="18" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+              <svg data-element-type="icon" data-icon-type="svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
             </span>
             <span class="index-hero-metric-text">תוצאות נראות לעין</span>
           </div>
@@ -856,7 +856,7 @@
 
   <!-- Bottom Divider -->
   <div class="index-hero-divider-wrapper">
-    <svg data-no-icon-edit="true" aria-hidden="true" viewbox="0 0 1440 90" preserveaspectratio="none" xmlns="http://www.w3.org/2000/svg">
+    <svg data-no-icon-edit="true" aria-hidden="true" viewBox="0 0 1440 90" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M0,90 L0,52 Q120,28 240,44 T480,36 Q600,30 720,46 T960,34 Q1080,28 1200,44 T1440,38 L1440,90 Z" fill="#111315"></path>
     </svg>
   </div>
@@ -880,7 +880,7 @@
       <!-- Card 1: Personal Training -->
       <article class="index-services-card">
         <div class="index-services-card-icon-wrap">
-          <svg data-element-type="icon" data-icon-type="svg" width="40" height="40" viewbox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <svg data-element-type="icon" data-icon-type="svg" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
             <circle cx="20" cy="10" r="5" stroke="var(--primary)" stroke-width="2"></circle>
             <path d="M8 36c0-6.627 5.373-12 12-12s12 5.373 12 12" stroke="var(--primary)" stroke-width="2" stroke-linecap="round"></path>
             <path d="M20 24v8M16 30l4 4 4-4" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -900,7 +900,7 @@
       <article class="index-services-card index-services-card--featured">
         <div class="index-services-card-featured-badge">הכי פופולרי</div>
         <div class="index-services-card-icon-wrap">
-          <svg data-element-type="icon" data-icon-type="svg" width="40" height="40" viewbox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <svg data-element-type="icon" data-icon-type="svg" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
             <circle cx="12" cy="11" r="4" stroke="var(--secondary)" stroke-width="2"></circle>
             <circle cx="28" cy="11" r="4" stroke="var(--secondary)" stroke-width="2"></circle>
             <path d="M2 34c0-5.523 4.477-10 10-10h16c5.523 0 10 4.477 10 10" stroke="var(--secondary)" stroke-width="2" stroke-linecap="round"></path>
@@ -923,7 +923,7 @@
       <!-- Card 3: Goal-Focused Conditioning -->
       <article class="index-services-card">
         <div class="index-services-card-icon-wrap">
-          <svg data-element-type="icon" data-icon-type="svg" width="40" height="40" viewbox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <svg data-element-type="icon" data-icon-type="svg" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
             <circle cx="20" cy="20" r="14" stroke="var(--accent)" stroke-width="2"></circle>
             <circle cx="20" cy="20" r="8" stroke="var(--accent)" stroke-width="2"></circle>
             <circle cx="20" cy="20" r="3" fill="var(--accent)"></circle>
@@ -948,7 +948,7 @@
   <!-- Bottom Diagonal Divider -->
   <div class="index-services-divider-wrapper">
     <div class="index-services-neon-rule"></div>
-    <svg data-no-icon-edit="true" aria-hidden="true" viewbox="0 0 1440 72" preserveaspectratio="none" xmlns="http://www.w3.org/2000/svg">
+    <svg data-no-icon-edit="true" aria-hidden="true" viewBox="0 0 1440 72" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M0,72 L0,32 L1440,0 L1440,72 Z" fill="var(--bg-light)"></path>
     </svg>
   </div>
@@ -1028,7 +1028,7 @@
 
   <!-- Bottom Divider: curved band transitioning to dark success-stories section -->
   <div class="index-stats-divider-wrapper">
-    <svg data-no-icon-edit="true" aria-hidden="true" viewbox="0 0 1440 100" preserveaspectratio="none" xmlns="http://www.w3.org/2000/svg">
+    <svg data-no-icon-edit="true" aria-hidden="true" viewBox="0 0 1440 100" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
       <!-- Orbital grid texture layer -->
       <ellipse cx="720" cy="20" rx="560" ry="18" fill="none" stroke="rgba(46,230,255,0.07)" stroke-width="1.5"></ellipse>
       <ellipse cx="720" cy="30" rx="400" ry="12" fill="none" stroke="rgba(255,45,143,0.05)" stroke-width="1"></ellipse>
@@ -1131,7 +1131,7 @@
 
   <!-- Bottom divider: acid-lime pulse-line motif -->
   <div class="iss-divider-wrapper">
-    <svg data-no-icon-edit="true" aria-hidden="true" viewbox="0 0 1440 72" preserveaspectratio="none" xmlns="http://www.w3.org/2000/svg">
+    <svg data-no-icon-edit="true" aria-hidden="true" viewBox="0 0 1440 72" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
       <!-- Acid-lime pulse line -->
       <polyline points="0,36 60,36 80,12 100,56 120,20 140,50 160,36 260,36 280,8 300,60 320,24 340,48 360,36 520,36 540,14 560,54 580,22 600,46 620,36 800,36 820,10 840,58 860,26 880,50 900,36 1100,36 1120,16 1140,52 1160,20 1180,48 1200,36 1440,36" fill="none" stroke="var(--accent)" stroke-width="2" opacity="0.72"></polyline>
       <!-- Fade fill to next section bg -->
@@ -1156,7 +1156,7 @@
 </section>
   </main>
   
-  <footer class="site-footer"><div class="footer-top-accent"></div><div class="footer-container"><div class="footer-grid"><div class="footer-col footer-brand"><img src="/assets/business-logo.webp" alt="Stella Fitness" class="logo"><p class="footer-tagline">ביצועים. טרנספורמציה. תוצאות.</p><p class="footer-desc">Stella Fitness היא מותג כושר פרימיום המחויב לשינוי אמיתי ומדיד. אנחנו כאן כדי לעזור לך להגיע לשיא הפוטנציאל שלך.</p><div class="footer-social"><a href="[facebook_handle]" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a><a href="[instagram_handle]" aria-label="Instagram"><i class="fab fa-instagram"></i></a><a href="[whatsapp_handle]" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a></div></div><div class="footer-col footer-links"><h4 class="footer-heading"><span class="heading-accent"></span>ניווט מהיר</h4><ul><li><a href="/programs"><i class="fas fa-chevron-left"></i>תוכניות</a></li><li><a href="/about"><i class="fas fa-chevron-left"></i>אודות</a></li><li><a href="/contact"><i class="fas fa-chevron-left"></i>צור קשר</a></li></ul></div><div class="footer-col footer-contact"><h4 class="footer-heading"><span class="heading-accent"></span>יצירת קשר</h4><ul class="contact-list"><li><a href="/"><span class="contact-icon"><i class="fas fa-envelope"></i></span><span class="contact-text">[business_email]</span></a></li><li><a href="/"><span class="contact-icon"><i class="fas fa-phone"></i></span><span class="contact-text">[business_phone]</span></a></li><li><a href="/"><span class="contact-icon"><i class="fas fa-map-marker-alt"></i></span><span class="contact-text">[business_address]</span></a></li></ul></div><div class="footer-col footer-cta-col"><h4 class="footer-heading"><span class="heading-accent"></span>מוכן להתחיל?</h4><p class="cta-text">הצטרף אלינו עוד היום ותתחיל את המסע שלך לכושר אמיתי.</p><a href="/programs" class="footer-cta-btn">צפה בתוכניות</a><div class="footer-badge"><i class="fas fa-shield-alt"></i><span>אימון מקצועי ומוסמך</span></div></div></div></div><div class="footer-bottom"><div class="footer-container"><div class="footer-bottom-inner"><p class="footer-copy">© 2026 Stella Fitness. כל הזכויות שמורות.</p><div class="footer-legal"><a href="/privacy">מדיניות פרטיות</a><span class="legal-sep"></span><a href="/terms">תנאי שימוש</a><span class="legal-sep"></span><a href="/accessibility">נגישות</a><span class="legal-sep"></span><a href="https://zappy5.com" target="_blank" class="zappy-attribution">נוצר באמצעות Zappy</a></div></div></div></div></footer>
+  <footer class="site-footer"><div class="footer-top-accent"></div><div class="footer-container"><div class="footer-grid"><div class="footer-col footer-brand"><img src="/assets/business-logo.webp" alt="Stella Fitness" class="logo"><p class="footer-tagline">ביצועים. טרנספורמציה. תוצאות.</p><p class="footer-desc">Stella Fitness היא מותג כושר פרימיום המחויב לשינוי אמיתי ומדיד. אנחנו כאן כדי לעזור לך להגיע לשיא הפוטנציאל שלך.</p><div class="footer-social"><a href="#" aria-label="Facebook" style="display:none !important;"><i class="fab fa-facebook-f"></i></a><a href="#" aria-label="Instagram" style="display:none !important;"><i class="fab fa-instagram"></i></a><a href="#" aria-label="WhatsApp" style="display:none !important;"><i class="fab fa-whatsapp"></i></a></div></div><div class="footer-col footer-links"><h4 class="footer-heading"><span class="heading-accent"></span>ניווט מהיר</h4><ul><li><a href="/programs"><i class="fas fa-chevron-left"></i>תוכניות</a></li><li><a href="/about"><i class="fas fa-chevron-left"></i>אודות</a></li><li><a href="/contact"><i class="fas fa-chevron-left"></i>צור קשר</a></li></ul></div><div class="footer-col footer-contact"><h4 class="footer-heading"><span class="heading-accent"></span>יצירת קשר</h4><ul class="contact-list"><li><a href="/"><span class="contact-icon"><i class="fas fa-envelope"></i></span><span class="contact-text">demafitness25@gmail.com</span></a></li><li><a href="/"><span class="contact-icon"><i class="fas fa-phone"></i></span><span class="contact-text">0543914493</span></a></li><li><a href="/"><span class="contact-icon"><i class="fas fa-map-marker-alt"></i></span><span class="contact-text">סאג'ור</span></a></li></ul></div><div class="footer-col footer-cta-col"><h4 class="footer-heading"><span class="heading-accent"></span>מוכן להתחיל?</h4><p class="cta-text">הצטרף אלינו עוד היום ותתחיל את המסע שלך לכושר אמיתי.</p><a href="/programs" class="footer-cta-btn">צפה בתוכניות</a><div class="footer-badge"><i class="fas fa-shield-alt"></i><span>אימון מקצועי ומוסמך</span></div></div></div></div><div class="footer-bottom"><div class="footer-container"><div class="footer-bottom-inner"><p class="footer-copy">© 2026 Stella Fitness. כל הזכויות שמורות.</p><div class="footer-legal"><a href="/privacy">מדיניות פרטיות</a><span class="legal-sep"></span><a href="/terms">תנאי שימוש</a><span class="legal-sep"></span><a href="/accessibility">נגישות</a><span class="legal-sep"></span><a href="https://zappy5.com" target="_blank" class="zappy-attribution">נוצר באמצעות Zappy</a></div></div></div></div></footer>
   
   <a href="https://wa.me/[whatsapp_handle]" class="whatsapp-float" aria-label="WhatsApp">
     <i class="fab fa-whatsapp"></i>
